@@ -21,14 +21,14 @@ public class Exercise1 {
 		Scanner input = new Scanner(System.in); 
 		//record user input.
 		
-		System.out.println("Please enter your amount in change.");
+		System.out.println("Please enter your amount in change you have.");
 		//asks for input.
 		
 		change = input.nextInt();
 		//store data.
 		
 		quarter = change / 25;
-		// calculate quaters.
+		// calculate quarters.
 		
 		dimes = (change % 25) / 10;
 		
@@ -44,6 +44,8 @@ public class Exercise1 {
 		System.out.println(" Nickels: "+ nickel  );
 		
 		System.out.println(" Pennies: " + pennies );
+		
+		System.out.println();
 		
 
 	}
