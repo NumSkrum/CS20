@@ -1,3 +1,15 @@
+/*
+
+Program: digits3.java          Last Date of this Revision: September 30, 2019
+
+Purpose: display a three digit number into it's three separate numbers.
+
+Author: Leo Lai, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 import java.util.Scanner;
 
 public class digits3 {
@@ -26,3 +38,15 @@ public class digits3 {
 	}
 
 }
+//End class
+
+/* Screen dump
+
+Please enter a three digit number.
+563
+The first number is: 5
+The second number is: 6
+The second number is: 3
+
+
+*/

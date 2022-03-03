@@ -42,7 +42,8 @@ public class Declaring {
 	
 	}
 
-}//End class
+}
+//End class
 
 /* Screen dump
 
