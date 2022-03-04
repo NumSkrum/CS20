@@ -30,7 +30,7 @@ public class digits3 {
 		System.out.println("The first number is: " + Digit / 100 );
 		//displays first number by division.
 		
-		System.out.println("The second number is: "+ Digit % 100 /10 );
+		System.out.println("The second number is: "+ Digit % 100 / 10 );
 		//display second number via remainder
 		
 		System.out.println("The second number is: "+ Digit % 10 );
