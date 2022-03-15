@@ -49,7 +49,9 @@ public class Surfp3 {
 
 /* Screen dump
 
-
+Please enter the height of the wave.
+5
+Go body boarding.
 
 
 
