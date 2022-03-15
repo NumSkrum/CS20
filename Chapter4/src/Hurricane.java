@@ -1,3 +1,14 @@
+/*
+
+Program: Hurricane.java          Last Date of this Revision: March 15, 2022
+
+Purpose: Determine wind speed and display category of hurricane.
+Author: Leo Lai, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 import java.util.Scanner;
 
 public class Hurricane {
@@ -44,3 +55,14 @@ public class Hurricane {
 	}
 
 }
+//End class
+
+/* Screen dump
+
+Please enter the hurricane category.
+2
+Category 2:96-110 MPH or 83-95 KT or 154-177 KM/HR
+
+
+
+*/

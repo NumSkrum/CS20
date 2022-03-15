@@ -1,3 +1,14 @@
+/*
+
+Program: Surf3.java          Last Date of this Revision: March 15, 2022
+
+Purpose: Determine if wave height is optimal for surfing, body boarding, or is just bad.
+Author: Leo Lai, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 import java.util.Scanner;
 
 public class Surfp3 {
@@ -34,3 +45,12 @@ public class Surfp3 {
 	}
 
 }
+//End class
+
+/* Screen dump
+
+
+
+
+
+*/
