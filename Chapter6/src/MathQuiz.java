@@ -66,7 +66,7 @@ public class MathQuiz
 			}
 		}//end of loop.
 		
-		System.out.println("You answered " + totalCorrect + "out of " + question + ".");
+		System.out.println("You answered " + totalCorrect + " out of " + question + ".");
 	}
 	
 	
