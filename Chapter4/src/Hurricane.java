@@ -51,7 +51,10 @@ public class Hurricane {
 		{
 		System.out.println("Category 5:Greater than 155 MPH or 135 KT or 249 KM/HR");
 		}
-
+		else
+		{
+		System.out.println("That's not a hurricane");
+		}
 	}
 
 }
