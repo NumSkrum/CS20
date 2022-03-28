@@ -6,9 +6,13 @@ public class TimeConv {
 	{
 		int Hours, Min;
 		Scanner input = new Scanner(System.in);
+		//Detects input.
 		
 		System.out.println("Please enter the amount of hours.");
+		//
+		
 		Hours = input.nextInt();
+		
 		Min = Hours * 60;
 		
 		System.out.println("There are " + Min + " minutes in " +Hours+ " hours.");
