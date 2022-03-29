@@ -1,3 +1,14 @@
+/*
+
+Program: Exersice6.java          Last Date of this Revision: March 16, 2022
+
+Purpose: Math help
+Author: Leo Lai, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 import java.util.Scanner;
 
 public class Exercise6 {
