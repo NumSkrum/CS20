@@ -1,3 +1,14 @@
+/*
+
+Program: TimeConv.java          Last Date of this Revision: March 16, 2022
+
+Purpose: converts time into another time.
+Author: Leo Lai, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 import java.util.Scanner;
 
 public class TimeConv {
