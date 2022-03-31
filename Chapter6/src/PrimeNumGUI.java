@@ -5,7 +5,7 @@ public class PrimeNumGUI {
 	public static void main(String[] args) 
 	{
 		
-		int Num;
+		int Num, Count = 0;
 		
 		Scanner input = new Scanner(System.in); 
 		//record user input.
@@ -14,24 +14,41 @@ public class PrimeNumGUI {
 		
 		Num = input.nextInt();
 		
-		if(Num % Num == 0)
+		for(int i = 1; i <= Num; i++)
 		{
+			if(Num % i == 0)
+			{
+				Count =+ 1;
+			}
+		
+			switch(Count)
+			{
+		case 1:
+			{
+				if(Count > 2)
+				{
+					System.out.println(Num +" is number isn't prime.");
+					
+				}
+				
+			}
+		
+		case 2:
+			{
+		
+				if(Count == 2)
+				{
+					System.out.println("This number is prime.");
+					
+				}
 			
-			System.out.println("This number is a prime number.");
-			
+			}
+		
+		
+		
+		
+			}
 		}
-		else if (Num / 2 > 0)
-		{
-			
-			System.out.println("This number is not prime Number.");
-			
-		}
-		
-		
-		
-		
-		
-		
 		
 	}
 
