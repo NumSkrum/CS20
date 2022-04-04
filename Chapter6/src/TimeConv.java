@@ -116,4 +116,14 @@ public class TimeConv {
 	
 	}
 	
-}
+}//End of class.
+/*
+1.Hours to minutes
+2.Days to hours.
+3.Minutes to hours
+4.Hours to days
+1
+Please enter the amount of hours.
+34543
+There are 2072580 minutes in 34543 hours.
+ */

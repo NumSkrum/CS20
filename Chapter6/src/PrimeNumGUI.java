@@ -1,6 +1,6 @@
 /*
 
-Program: Exersice6.java          Last Date of this Revision: April 1, 2022
+Program: PrimeNumGUI.java          Last Date of this Revision: April 1, 2022
 
 Purpose: ask for a number and display if it's a prime number or not
 Author: Leo Lai, 

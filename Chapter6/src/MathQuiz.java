@@ -1,3 +1,14 @@
+/*
+
+Program: MathQuiz.java          Last Date of this Revision: April 4, 2022
+
+Purpose: Asks for difficulty and displays question, and telling the user the amount of questions answered correctly.
+Author: Leo Lai, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 import java.util.Scanner;
 
 public class MathQuiz 
@@ -99,4 +110,17 @@ public class MathQuiz
 		
 	}
 
-}
+}//End of class.
+/*
+Enter the math quiz level. (S for simple and H for hard.
+H
+how many questions would you like?
+2
+What is 2 * 9 ? 
+19
+Incorrect - the correct answer is 18
+What is 4 * 1 ? 
+4
+Correct!!!
+You answered 1 out of 2.
+ */
