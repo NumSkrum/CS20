@@ -133,7 +133,22 @@ public class Exercise6 {
 	}	
 		
 }
-	
+/*
+This program is meant to help you with your math, are you ready?
+Please enter 1 for yes or 2 for no.
+1
+Alright
+What would you like?
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+Please enter numbers 1-4 for your choice.
+3
+What is 22*2?
+44
+You are right.	
+ */
 		
 		
 
