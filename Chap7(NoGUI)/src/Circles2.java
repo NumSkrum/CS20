@@ -1,4 +1,14 @@
+/*
 
+Program: Circles.java          Last Date of this Revision: April 12, 2022
+
+Purpose: Get radius and circumference of a circle and overload
+Author: Leo Lai, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 public class Circles2 {
 
 	private static final double PI= 3.14;

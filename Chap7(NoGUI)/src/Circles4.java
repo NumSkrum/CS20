@@ -36,15 +36,25 @@ public class Circles4 {
 		System.out.println("The formula for the area of a circle is a=Pi*r*r");
 	}
 	
-	 public static void main (String[] args) {
-		 Circles spot = new Circles();
-		 
-		 
-		 spot.setRadius(3);
-		 System.out.println("Circle Radius: " + spot.getRadius());
-		 System.out.println("Circle Circumference: " + spot.Circumference());
-		 Circles3.displayAreaFormula();
-	 }
+	public boolean equals(Object c) {
+		Circles4 testObj = (Circles4)c;
+		
+		if (testObj.getRadius() == radius) 
+		{
+			return(true);
+		}
+		else 
+		{
+			return(false);
+		}
+	}
+	public String toString() {
+		String circleString;
 	
+		circleString = "Circle has string" + radius;
+		return(circleString);
+	}
+		
 }
+
 
