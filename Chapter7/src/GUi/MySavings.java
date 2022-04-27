@@ -92,11 +92,17 @@ public class MySavings {
 		JButton Submit = new JButton("Submit");
 		Submit.setBounds(10, 211, 89, 23);
 		frame.getContentPane().add(Submit);
-		
-		
-		
-		
+		Submit.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) 
+		{
+			double Choice = Double.parseDouble(Input.getText());
+			if(Choice == 1)
+			{
+				Blank.setText("total");
+				
+			}
+		}
+	});
 		
 	}
 }
-
