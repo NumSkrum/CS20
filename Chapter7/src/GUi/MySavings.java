@@ -98,7 +98,7 @@ public class MySavings {
 			double Choice = Double.parseDouble(Input.getText());
 			if(Choice == 1)
 			{
-				Blank.setText("total");
+				Blank.setText("AHHHHHH");
 				
 			}
 		}
