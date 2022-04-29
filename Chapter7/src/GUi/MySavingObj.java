@@ -7,10 +7,5 @@ public class MySavingObj {
 		System.out.println(total);
 		
 	}
-	
-	public void AddPenny() 
-	{
-		
-	}
 
 }

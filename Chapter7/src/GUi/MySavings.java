@@ -16,6 +16,8 @@ public class MySavings {
 
 	MySavingObj Object = new MySavingObj();
 	
+	private MySavingObj obj = new MySavingObj();	
+	
 	/**
 	 * Launch the application.
 	 */
@@ -98,7 +100,7 @@ public class MySavings {
 			double Choice = Double.parseDouble(Input.getText());
 			if(Choice == 1)
 			{
-				Blank.setText("Water");
+				Blank.setText(obj);
 				
 			}
 		}
