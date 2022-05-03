@@ -4,10 +4,10 @@ import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-import javax.swing.JButton;
 
 public class MySavings {
 
@@ -16,7 +16,7 @@ public class MySavings {
 
 	MySavingObj Object = new MySavingObj();
 	
-	private MySavingObj obj = new MySavingObj();	
+	public MySavingObj obj = new MySavingObj();	
 	
 	/**
 	 * Launch the application.
@@ -100,7 +100,7 @@ public class MySavings {
 			double Choice = Double.parseDouble(Input.getText());
 			if(Choice == 1)
 			{
-				Blank.setText(obj);
+				Blank.setText();
 				
 			}
 		}
