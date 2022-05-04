@@ -14,9 +14,7 @@ public class MySavings {
 	private JFrame frame;
 	private JTextField Input;
 
-	MySavingObj Object = new MySavingObj();
-	
-	public MySavingObj obj = new MySavingObj();	
+	public MySavingObj Object = new MySavingObj();
 	
 	/**
 	 * Launch the application.
@@ -97,14 +95,32 @@ public class MySavings {
 		Submit.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) 
 		{
-			double Choice = Double.parseDouble(Input.getText());
-			if(Choice == 1)
+			int Choice = (int) Double.parseDouble(Input.getText());
+			switch (Choice) {
+			case 1: 
 			{
-				Blank.setText();
+			
+				Blank.setText(Object.ToString());
 				
+				
+			}break;
+			case 2:
+			{
+				
+				Blank.setText(Object.Penny());
+				
+			}break;
+			case 3:			
+			{
+				
+				Blank.setText(Object.Nickel());
+				
+			}break;
+			
 			}
+			
 		}
-	});
+													});
 		
 	}
 }
