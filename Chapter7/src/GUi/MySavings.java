@@ -100,7 +100,7 @@ public class MySavings {
 			case 1: 
 			{
 			
-				Blank.setText(Object.ToString());
+				Blank.setText(Object.Total());
 				
 				
 			}break;
@@ -116,7 +116,12 @@ public class MySavings {
 				Blank.setText(Object.Nickel());
 				
 			}break;
-			
+			case 4:
+			{	
+				
+				Blank.setText(Object.Dime());
+				
+			}break;
 			
 			
 			}

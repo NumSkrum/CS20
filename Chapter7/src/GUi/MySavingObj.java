@@ -2,38 +2,37 @@ package GUi;
 
 public class MySavingObj {
 	
-	public double Balance, T;
+	public double T = 0;
 
-	public String ToString() {
+	public double Total() {
 		
-		String Balance_display = "" + (Balance + T);
+		T = T;
 				
-		return Balance_display;
-		
-	}
-		
-	public String Penny() 
-	{
-		
-		double Penny;
-		
-		Penny = 0.01;
-		
-		String T = "" + (Balance + Penny);
-		
 		return T;
 		
 	}
-	public String Nickel()
+		
+	public void Penny() 
 	{
-		double Nickel;
 		
-		Nickel = 0.05;
+		T = T + 0.01;
 		
-		String T = "" + (Balance + Nickel);
-		
-		return T;
+	
 	}
-	
-	
+	public void Nickel()
+	{
+		T = T + 0.05;
+		
+	}
+	public void Dime()
+	{
+		T = T + 0.10;
+		
+	}
+	public void Quarter()
+	{
+		T = T + 0.25;
+		
+	}
+
 }
