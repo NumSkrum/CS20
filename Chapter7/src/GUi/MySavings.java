@@ -107,22 +107,27 @@ public class MySavings {
 			case 2:
 			{
 				
-				Blank.setText(Object.Penny());
+				(Object.Total() + Penny);
 				
 			}break;
 			case 3:			
 			{
 				
-				Blank.setText(Object.Nickel());
+				(Object.Total() + Nickel);
 				
 			}break;
 			case 4:
 			{	
 				
-				Blank.setText(Object.Dime());
+				(Object.Total() + Dime);
 				
 			}break;
-			
+			case 5:
+			{
+				
+				(Object.Total() + Quarter);
+				
+			}break;
 			
 			}
 			

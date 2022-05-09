@@ -2,36 +2,27 @@ package GUi;
 
 public class MySavingObj {
 	
-	public double T = 0;
-
-	public double Total() {
-		
-		T = T;
-				
-		return T;
-		
-	}
-		
-	public void Penny() 
+	public static double Total(double Quarter, double Dimes, double Nickels, double Pennies) 
+	//collects coins and generates total amount.
 	{
 		
-		T = T + 0.01;
+		Quarter = (Quarter * 0.25);
+		//Generates accurate currency amount of the amount of quarters.
 		
-	
-	}
-	public void Nickel()
-	{
-		T = T + 0.05;
+		Dimes = (Dimes * 0.10);
+		//Generates accurate currency amount of the amount of dimes.
 		
-	}
-	public void Dime()
-	{
-		T = T + 0.10;
+		Nickels = (Nickels * 0.05);
+		//Generates accurate currency amount of the amount of nickels.
 		
-	}
-	public void Quarter()
-	{
-		T = T + 0.25;
+		Pennies = (Pennies * 0.01);
+		//Generates accurate currency amount of the amount of pennies.
+		
+		double Amount = (Quarter + Dimes + Nickels + Pennies);
+		//Calculates amount.
+		
+		return Amount;
+		//Results in amount.
 		
 	}
 
