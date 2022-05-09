@@ -107,7 +107,7 @@ public class MySavings {
 			case 2:
 			{
 				
-				(Object.Total() + Penny);
+				(Amount + Penny);
 				
 			}break;
 			case 3:			
