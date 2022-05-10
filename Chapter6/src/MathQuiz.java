@@ -89,7 +89,7 @@ public class MathQuiz
 		Scanner input = new Scanner(System.in); 
 		//record user input.
 		
-		System.out.println("Enter the math quiz level. (S for simple and H for hard.");
+		System.out.println("Enter the math quiz level. (S for simple and H for hard.)");
 		quizlevel = input.next();
 		
 		System.out.println("how many questions would you like?");
