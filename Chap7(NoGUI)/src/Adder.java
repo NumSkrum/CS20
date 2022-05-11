@@ -10,8 +10,30 @@ public class Adder {
 		Scanner input = new Scanner(System.in); 
 		//record user input.
 		
+		int question;
+		
+		System.out.println("Are you ready to start? Enter 1 for yes and 2 for no. ");
+		
+		question = input.nextInt();
+		
+		if (question == 1) 
+		{
+		System.out.println("Alright");
+		start(question);
+			
+		}
+		else 
+		{
+			System.exit(0);
+		}
+					
+		}
+	public static void start (int points) 
+	{
+		Scanner input = new Scanner(System.in); 
+		//record user input.
+		
 		int X, Y, answer;
-		int Points = 0;
 		int questions = 1000;
 		for(int i = 1; i <= questions; i++)
 		{
@@ -25,21 +47,20 @@ public class Adder {
 			if ((X + Y) == answer)
 			{
 				System.out.println("Correct!!!");
-				Points = Points + 5;
+				points = points + 5;
 			}	
+			else if(answer == 999)
+			{
+				
+				System.exit(0);
+			}
 			else
 			{
 				System.out.println("Incorrect, the correct answer is " + (X + Y));
 				one();
-			}
-
-		}//end of loop.
-		
-		System.out.println("You scored " + Points );
-			
-			
+			}	
 		}
-		
+	}
 	
 	public static void one()
 	{
@@ -62,6 +83,10 @@ public class Adder {
 				System.out.println("Correct!!!");
 				Points = Points + 3;
 			}	
+			else if(answer == 999)
+			{
+				
+			}
 			else
 			{
 				System.out.println("Incorrect, the correct answer is " + (X + Y));
@@ -103,8 +128,9 @@ public class Adder {
 	}
 
 
-		private static void end() {
-			// TODO Auto-generated method stub
+		private static void end() 
+		{
+			System.out.println("Your score was " );
 			
 		}
 		
