@@ -14,7 +14,7 @@ public class MySavings {
 	private JFrame frame;
 	private JTextField Input;
 
-	public MySavingObj Object = new MySavingObj();
+	public MySavingObj myS = new MySavingObj();
 	
 	/**
 	 * Launch the application.
@@ -96,11 +96,12 @@ public class MySavings {
 		public void actionPerformed(ActionEvent e) 
 		{
 			int Choice = (int) Double.parseDouble(Input.getText());
+
 			switch (Choice) {
 			case 1: 
 			{
 			
-				Blank.setText(Object.Total());
+				//Blank.setText(myS.Total(Quarter, Dimes, Nickels, Pennies));
 				
 				
 			}break;
