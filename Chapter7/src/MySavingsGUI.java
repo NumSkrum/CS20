@@ -1,4 +1,4 @@
-package GUi;
+
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -16,7 +16,11 @@ public class MySavingsGUI {
 	private static int Total;
 	
 	
-	public MySavingObj myS = new MySavingObj();
+	MySavingObj myS = new MySavingObj();
+	private JTextField textField;
+	
+	
+	
 	/**
 	 * Launch the application.
 	 */
@@ -37,7 +41,7 @@ public class MySavingsGUI {
 	 * Create the application.
 	 */
 	public MySavingsGUI() {
-		Total = 0;
+		
 		initialize();
 	}
 
@@ -88,31 +92,92 @@ public class MySavingsGUI {
 		Choice.setColumns(10);
 		
 		JLabel Show = new JLabel("");
-		Show.setBounds(170, 11, 254, 189);
+		Show.setBounds(220, 11, 204, 189);
 		frame.getContentPane().add(Show);
 		
 		JButton Submit = new JButton("Submit");
-		Submit.setBounds(117, 219, 89, 23);
+		Submit.setBounds(117, 211, 89, 39);
 		frame.getContentPane().add(Submit);
+		
+		JLabel takeout = new JLabel("");
+		takeout.setBounds(213, 211, 232, 39);
+		frame.getContentPane().add(takeout);
+		
+		textField = new JTextField();
+		textField.setEditable(true);
+		textField.setEnabled(true);
+		textField.setBounds(124, 80, 86, 20);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
 			Submit.addActionListener(new ActionListener() 
 		{
 				public void actionPerformed(ActionEvent e) 
 				{
 					int choice = (int) Double.parseDouble(Choice.getText());
-				double Remove = 0;
+					int Remove = (int) Double.parseDouble(textField.getText());
+					
 					
 					if(choice == 1) 
 					{
-						String str = String.valueOf(Total);
+						myS.getTotal();
+						
+						String str = String.valueOf(myS.getTotal());
 						
 						Show.setText(str);	
 					}
 					else if(choice == 2) 
 					{
 						
+						myS.Penny();
+						
+						String str = String.valueOf(myS.getTotal());
+						
+						Show.setText(str);
 						
 					}
+					else if(choice == 3)
+					{
+						
+						myS.Nickels();
+						
+						String str = String.valueOf(myS.getTotal());
+						
+						Show.setText(str);
+					}
+					else if(choice == 4)
+					{
+						
+						myS.Dimes();
+						
+						String str = String.valueOf(myS.getTotal());
+						
+						Show.setText(str);
 					
+					}
+					else if(choice == 5)
+					{
+						
+						myS.Quarter();
+						
+						String str = String.valueOf(myS.getTotal());
+						
+						Show.setText(str);
+					}
+					else if(choice == 6)
+					{
+						takeout.setText("How much would you like to take out?");
+						
+						myS.Remove(Remove);
+						
+						String str = String.valueOf(myS.getTotal());
+						
+						Show.setText(str);
+						
+					}
+					else if(choice == 0)
+					{
+						System.exit(0);
+					}
 				}
 		});
 		
