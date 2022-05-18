@@ -44,10 +44,11 @@ public class MySavingObj
 		
 	}
 	
-	public void Remove(int remove)
+	public double Remove(double remove)
 	{
 		total = total - remove;
 		
+		return total;
 	}
 	
 	

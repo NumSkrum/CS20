@@ -13,12 +13,9 @@ public class MySavingsGUI {
 
 	private JFrame frame;
 	private JTextField Choice;
-	private static int Total;
-	
+	private JTextField Removal;
 	
 	MySavingObj myS = new MySavingObj();
-	private JTextField textField;
-	
 	
 	
 	/**
@@ -95,42 +92,50 @@ public class MySavingsGUI {
 		Show.setBounds(220, 11, 204, 189);
 		frame.getContentPane().add(Show);
 		
-		JButton Submit = new JButton("Submit");
-		Submit.setBounds(117, 211, 89, 39);
-		frame.getContentPane().add(Submit);
+		Removal = new JTextField("0.0");
+		Removal.setEditable(false);
+		Removal.setEnabled(false);
+		Removal.setBounds(124, 80, 86, 20);
+		frame.getContentPane().add(Removal);
+		Removal.setColumns(10);
+		
 		
 		JLabel takeout = new JLabel("");
 		takeout.setBounds(213, 211, 232, 39);
 		frame.getContentPane().add(takeout);
+	
 		
-		textField = new JTextField();
-		textField.setEditable(true);
-		textField.setEnabled(true);
-		textField.setBounds(124, 80, 86, 20);
-		frame.getContentPane().add(textField);
-		textField.setColumns(10);
+		JButton Submit = new JButton("Submit");
+		Submit.setBounds(117, 211, 89, 39);
+		frame.getContentPane().add(Submit);
 			Submit.addActionListener(new ActionListener() 
 		{
 				public void actionPerformed(ActionEvent e) 
 				{
-					int choice = (int) Double.parseDouble(Choice.getText());
-					int Remove = (int) Double.parseDouble(textField.getText());
-					
+					int choice = Integer.parseInt(Choice.getText());
+					//takes user input.
 					
 					if(choice == 1) 
+					//if the inserted number is 1.
 					{
 						myS.getTotal();
+						//get total.
 						
 						String str = String.valueOf(myS.getTotal());
+						//change total to string
 						
 						Show.setText(str);	
+						//place total into show text box.
 					}
 					else if(choice == 2) 
+					//if choice is 2
 					{
 						
 						myS.Penny();
+						//calls object to add 0.01.
 						
 						String str = String.valueOf(myS.getTotal());
+						
 						
 						Show.setText(str);
 						
@@ -139,6 +144,7 @@ public class MySavingsGUI {
 					{
 						
 						myS.Nickels();
+						//adds 0.05
 						
 						String str = String.valueOf(myS.getTotal());
 						
@@ -148,6 +154,7 @@ public class MySavingsGUI {
 					{
 						
 						myS.Dimes();
+						//adds 0.10
 						
 						String str = String.valueOf(myS.getTotal());
 						
@@ -158,6 +165,7 @@ public class MySavingsGUI {
 					{
 						
 						myS.Quarter();
+						//adds 0.25
 						
 						String str = String.valueOf(myS.getTotal());
 						
@@ -165,9 +173,18 @@ public class MySavingsGUI {
 					}
 					else if(choice == 6)
 					{
+						Removal.setEditable(true);
+						Removal.setEnabled(true);
+						//shows place to remove an amount
+						
 						takeout.setText("How much would you like to take out?");
+						//asks how much they would like to take out.
+						
+						double Remove = Double.parseDouble(Removal.getText());
+						//gets removal amount
 						
 						myS.Remove(Remove);
+						//removes amount from total.
 						
 						String str = String.valueOf(myS.getTotal());
 						
@@ -177,6 +194,7 @@ public class MySavingsGUI {
 					else if(choice == 0)
 					{
 						System.exit(0);
+						//closes application.
 					}
 				}
 		});
