@@ -16,6 +16,8 @@ public class digits3 {
 
 	public static void main(String[] args)
 	{
+		
+		//
 		int Digit;
 		
 		Scanner input = new Scanner(System.in); 
