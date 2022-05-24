@@ -1,4 +1,4 @@
-spackage GUi;
+package GUi;
 
 import java.lang.Math;
 
