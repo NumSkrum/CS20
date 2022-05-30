@@ -1,25 +1,38 @@
 package GUi;
 
 public class CountDownObj {
-
-	public static void main(String[] args) 
-	{
-		final int NUM = 11;
-		
-		int[] numbers = new int[NUM];
+	final int NUM = 11;
+	//sets Array to 11
+	
+	String Count = "";
+	//removes null
+	
+	int[] numbers = new int[NUM];
+	//Creates array
+	
+	public CountDownObj()
+	{	
 		
 		for(int i = 0; i < NUM; i++)
+		//Loop
 		{
 			numbers[i] = i;
-			
+			//Adds numbers to Array
 		}
-		System.out.println("Count Down");
-		for(int i = NUM - 1; i >= 0; i--)
+	
+	}
+
+	public String toString() {
+		for(int i = NUM - 1; i > 0; i--)
+		//Loop
 		{
-			System.out.println(numbers[i]);
+			Count = Count + numbers[i] + " ";
+			//Prints Numbers in reverse order with space.
 			
 		}
 		
+		return Count;
+		//Returns array.
 	}
 
 }
