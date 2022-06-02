@@ -2,7 +2,7 @@
 //Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
 import com.phidget22.*;
 
-public class Thermos {
+public class Temp {
     public static void main(String[] args) throws Exception{
 
         //Create | Here you have created a TemperatureSensor object. TemperatureSensor is a class in your Phidgets library that gathers temperature data from your Phidget. 
@@ -13,9 +13,10 @@ public class Thermos {
 
         //Use your Phidgets | This code will print the temperature every 150ms
         while (true) {
-            temperatureSensor = (temperatureSensor * 1.8) + 32;
-            System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
-            Thread.sleep(150);
+        	double C = temperatureSensor.getTemperature();
+        	double F = C * 1.8 + 32;
+            System.out.println("Temperature: " + F + " °F and " + C + "°C");
+            Thread.sleep(1000);
         }
     }
 }
