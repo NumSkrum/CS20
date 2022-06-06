@@ -17,6 +17,7 @@ public class Brightness {
         redLED.open(1000);
 
         //Use your Phidgets with Duty Cycle | Duty Cycle controls the power to your Phidget (Digital Output object). Duty Cycle values range from 0.0 - 1.0.
+        
         redLED.setDutyCycle(0.1);
         
     }
