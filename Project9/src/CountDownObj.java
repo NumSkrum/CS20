@@ -1,5 +1,3 @@
-package GUi;
-
 public class CountDownObj {
 	final int NUM = 11;
 	//sets Array to 11

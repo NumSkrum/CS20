@@ -1,5 +1,3 @@
-package GUi;
-
 import java.util.Scanner;
 
 public class Squares {

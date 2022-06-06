@@ -1,7 +1,6 @@
-package GUi;
 import java.util.Scanner;
 
-public class Studentroster {
+public class StudentRoster {
 
 	public static void main(String[] args) 
 	{
@@ -40,4 +39,3 @@ public class Studentroster {
 	}
 
 }
-
