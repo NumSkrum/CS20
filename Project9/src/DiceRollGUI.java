@@ -15,6 +15,10 @@ public class DiceRollGUI {
 	private JFrame frame;
 	private JTextField Rolling;
 	
+	int outcome;
+
+
+	
 	DiceRoll DR = new DiceRoll();
 
 	/**
@@ -74,7 +78,21 @@ public class DiceRollGUI {
 		{
 				public void actionPerformed(ActionEvent e) 
 				{
-					
+					int outcome;
+					int[] outcomes = new int[19];
+					String Count = "";
+					int choice = Integer.parseInt(Rolling.getText());
+					//takes user input.
+					for (int roll = 0; roll < choice; roll++)
+					{
+						outcome = (int)(6 * Math.random() + 1) + (int)(6 * Math.random() + 1) + (int)(6 * Math.random() + 1);
+						outcomes[outcome] += 1;
+					}
+					for (int i = 3; i <= 18; i++)
+					{
+						Count = Count + i + ": " + outcomes[i] + " ";
+						Rolls.setText(Count);
+					}
 				}
 		});
 	}
