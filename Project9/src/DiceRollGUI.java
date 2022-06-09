@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import javax.swing.JTextPane;
 
 public class DiceRollGUI {
 
@@ -67,13 +68,14 @@ public class DiceRollGUI {
 		frame.getContentPane().add(Rolling);
 		Rolling.setColumns(10);
 		
-		JLabel Rolls = new JLabel("");
-		Rolls.setBounds(10, 100, 414, 125);
-		frame.getContentPane().add(Rolls);
-		
 		JButton Submit = new JButton("Submit.");
 		Submit.setBounds(10, 227, 89, 23);
 		frame.getContentPane().add(Submit);
+		
+		JTextPane Rolls = new JTextPane();
+		Rolls.setEditable(false);
+		Rolls.setBounds(213, 11, 155, 222);
+		frame.getContentPane().add(Rolls);
 		Submit.addActionListener(new ActionListener() 
 		{
 				public void actionPerformed(ActionEvent e) 
@@ -90,7 +92,7 @@ public class DiceRollGUI {
 					}
 					for (int i = 3; i <= 18; i++)
 					{
-						Count = Count + i + ": " + outcomes[i] + " ";
+						Count = Count + i + ": " + outcomes[i] + "\t ";
 						Rolls.setText(Count);
 					}
 				}
